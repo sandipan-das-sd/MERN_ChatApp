@@ -1,0 +1,22 @@
+# https://chatappfinal-delta.vercel.app
+User-agent: *
+Allow: /
+Allow: /messages
+Allow: /profile
+Allow: /settings
+
+# Block access to API routes and private pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*?*
+
+# Block specific file types
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemap
+Sitemap: https://chatappfinal-delta.vercel.app/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 10
